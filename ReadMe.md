@@ -17,19 +17,6 @@
 
 <a id="org5dc5102"></a>
 
-# Table of content
-
-1.  [2](#org644e380)
-    -   [2.1](#orgccd1b35)
-    -   [2.2](#orgefec416)
-2.  [3](#orgba86526)
-    -   [3.1](#org9217dcd)
-    -   [3.2](#org7e4025c)
-    -   [3.3](#orgc855b7c)
-    -   [3.4](#orgcad6af0)
-3.  [4](#orgc645f02)
-
-
 <a id="org644e380"></a>
 
 # Getting started with the project
