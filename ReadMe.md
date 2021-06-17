@@ -1,16 +1,15 @@
 
 # Table of Contents
 
-1.  [Table of content](#org5dc5102)
-2.  [Getting started with the project](#org644e380)
+1.  [Getting started with the project](#org644e380)
     1.  [Installing client side](#orgccd1b35)
     2.  [Installing server side](#orgefec416)
-3.  [Folder structure](#orgba86526)
+2.  [Folder structure](#orgba86526)
     1.  [Images](#org9217dcd)
     2.  [public](#org7e4025c)
     3.  [server](#orgc855b7c)
     4.  [src](#orgcad6af0)
-4.  [Example](#orgc645f02)
+3.  [Example](#orgc645f02)
     1.  [A example database is included in the root folder of the project. exampleDatabase](#orgf06951c)
         1.  [For Installation follow the below steps:](#org710eaeb)
 
