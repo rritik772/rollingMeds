@@ -173,7 +173,7 @@ app.get("/update-get-all-med-data/:pageNo/:searchTerm/:major", async (req, res) 
 app.post("/delete-medicine-entry", async (req, res) => {
   try {
     const { med_id } = req.body;
-    //await(await pool).query("delete from medicine where med_id=?",[med_id])
+    await(await pool).query("delete from medicine where med_id=?",[med_id])
     res.status(200).json("DONE");
   } catch (err) {
     console.error(err)
@@ -249,7 +249,7 @@ app.use('/delete-user/:user_d', async (req, res) => {
   const user_id = req.params;
   try {
     console.log(user_id)
-    //const deleted = await (await pool).query("delete from users where user_id=?", user_id)
+    const deleted = await (await pool).query("delete from users where user_id=?", user_id)
   } catch (err) {
     console.log(err);
   }
