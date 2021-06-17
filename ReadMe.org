@@ -78,4 +78,4 @@ This folder has the all the components required for the front end.
   #+begin_src shell
     mysql -u root -p rollingMeds < ./rollingMeds.db
   #+end_src
-** Account related info is in file [[file:AccountsInfo.json][AccountsInfo]]
+** Account related info is in [[file:AccountsInfo.json][AccountsInfo]]
