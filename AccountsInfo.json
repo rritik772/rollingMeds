@@ -1,0 +1,22 @@
+{
+    {
+        "email": "ritikranjan@rollingmeds.com",
+        "password": "ritik ranjan",
+        "passphrase": "here we go"
+    },
+    {
+        "email": "admin@rollingmeds.com",
+        "password": "adminrolls",
+        "passphrase": "admin will be admin"
+    },
+    {
+        "email": "campfire@rollingmeds.com",
+        "password": "campfire",
+        "passphrase": "i will burn your house with lemons"
+    },
+    {
+        "email": "hellenizer@rollingmeds.com",
+        "password": "hellenizer",
+        "passphrase": "hellenizer hellen or hell"
+    }
+}
