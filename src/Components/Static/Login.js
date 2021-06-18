@@ -13,7 +13,7 @@ function Login({onClick, onChange}) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [toggleForgetPassoword, setToggleForgetPassword] = useState(false);
-    const [forgetUsername, setForgetUsername] = useState('')
+    const [forgetEmail, setForgetUsername] = useState('')
     const [user, setUser] = useState(null);
 
     const [flashMessage, setFlashMessage] = useState(false);
@@ -52,7 +52,7 @@ function Login({onClick, onChange}) {
     }
 
     const checkUsername = async () => {
-        const response = await fetch(`${LOCALHOST}get-user/${forgetUsername}`)
+        const response = await fetch(`${LOCALHOST}get-user/${forgetEmail}`)
         const data = await response.json()
 
         if (data === undefined || data == null || data.length === 0){
@@ -88,7 +88,7 @@ function Login({onClick, onChange}) {
                 </form>
               {toggleForgetPassoword &&
                 <div className="flex mt-4 space-x-4">
-                  <input value={forgetUsername} onChange={(e) => setForgetUsername(e.target.value)} type="text" className="w-full px-3 py-1 border-1 border-gray-200 hover:border-indigo-200 rounded-xl hover:shadow-lg transition duration-500 ease-in-out outline-none font-medium" placeholder="Enter username"/>
+                  <input value={forgetEmail} onChange={(e) => setForgetUsername(e.target.value)} type="text" className="w-full px-3 py-1 border-1 border-gray-200 hover:border-indigo-200 rounded-xl hover:shadow-lg transition duration-500 ease-in-out outline-none font-medium" placeholder="Enter email"/>
                   <span onClick={() => checkUsername()} className="p-1 border-1 border-gray-200 hover:border-indigo-700 hover:shadow-lg rounded-xl transition duration-500"><BiCheck className="text-3xl text-gray-700"/></span>
                 </div>}
             </div>

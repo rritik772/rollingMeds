@@ -245,7 +245,7 @@ app.get("/get-all-doctors", async (req, res) => {
   }
 })
 
-app.use('/delete-user/:user_d', async (req, res) => {
+app.get('/delete-user/:user_d', async (req, res) => {
   const user_id = req.params;
   try {
     console.log(user_id)

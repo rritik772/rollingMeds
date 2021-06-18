@@ -14,15 +14,15 @@ function MainProfile({ user }) {
     <div>
       <div className="border-t-4 border-indigo-500 bg-white p-2 container my-4 mx-auto transition duration-700 ease-in-out rounded-b-lg hover:shadow-lg">
         <div className="flex flex-wrap justify-center align-center">
-          {user.roles === 'admin' &&
+          {(user.roles === 'admin' || user.roles === "Main admin") &&
             <div className="mx-2 p-2 text-center hover:shadow-lg cursor-pointer font-bold transition-all transform duration-700 border-1 border-gray-200 rounded-lg" onClick={() => setNowPage(<AddMedicine user={user} />)} >
               <span>Add Medicine</span>
             </div>}
-          {user.roles === "admin" &&
+          {(user.roles === "admin" || user.roles === "Main admin") &&
             <div className="mx-2 p-2 text-center hover:shadow-lg cursor-pointer font-bold transition-all transform duration-700 border-1 border-gray-200 rounded-lg" onClick={() => setNowPage(<UpdateMedicine />)}>
               <span>Update Medicine</span>
             </div>}
-          {user.roles === 'admin' &&
+          {(user.roles === 'admin' || user.roles === "Main admin") &&
             <div onClick={() => setNowPage(<Main />)} className="mx-2 p-2 text-center hover:shadow-lg cursor-pointer font-bold transition-all transform duration-700 border-1 border-gray-200 rounded-lg" data-target="#Modal" data-toggle="modal">
               <span>Change user role</span>
             </div>}
