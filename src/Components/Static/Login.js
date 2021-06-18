@@ -37,6 +37,9 @@ function Login({onClick, onChange}) {
                 const userCurrentPassword = sha256(password);
                 if (userCurrentPassword === userData.password){
                     console.log(userData);
+
+                    localStorage.setItem('user', userData.email);
+
                     setFlashMessage('Logged in Successfully');
                     onChange(userData);
                     onClick("<Home/>");
